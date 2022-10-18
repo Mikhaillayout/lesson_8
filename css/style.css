@@ -1,0 +1,203 @@
+/* ==================== Подключение обнуляющего стиля === (Обнуляет дефолтные настройки) === Начало === 2022-10 ==================== */
+@import "reset.css";
+/* ==================== Подключение обнуляющего стиля === (Обнуляет дефолтные настройки) === Конец === 2022-10 ==================== */
+
+/* ==================== Подключение шрифтов ===  === Начало === 2022-10 ==================== */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+/* ==================== Подключение шрифтов ===  === Конец === 2022-10 ==================== */
+
+body {
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 1.6;
+  color: #424551;
+  background-color: wheat;
+}
+.header,
+.footer {
+  margin: 20px;
+}
+.header__container,
+.footer__container {
+  max-width: 1230px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 16px;
+}
+.header__text,
+.footer__text {
+  color: white;
+  background: url("../img/Star.png") 0 50% repeat-x;
+}
+/* ==================== Первый блок === (Подробнее) === Начало === 2022-10 ==================== */
+.about {
+  margin: 0px 0px 180px 0px;
+}
+.about__container {
+  padding: 10px;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+.about__container > div:last-child {
+  margin: 0px;
+}
+
+.about__title,
+.about__subtitle {
+  margin: 0px 0px 48px 0px;
+  max-width: 600px;
+}
+.title__headline {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 1.3;
+  margin: 0px 0px 40px 0px;
+}
+
+.subtitle__title {
+  font-size: 28px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin: 0px 0px 24px 0px;
+}
+
+.subtitle__item {
+  background: url("../img/check.png") 0 5px no-repeat;
+  min-height: 21px;
+  padding-left: 32px;
+  margin: 0px 0px 5px 0px;
+}
+.subtitle__item:last-child {
+  margin: 0px 0px 0px 0px;
+}
+/* ==================== Первый блок === (Подробнее) === Конец === 2022-10 ==================== */
+
+/* ==================== Второй блок === (Подробнее) === Начало === 2022-10 ==================== */
+.curator__container {
+  padding: 10px;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+.curator__container *:last-child {
+  margin: 0px;
+}
+
+.title-course,
+.steps__title {
+  margin: 0px 0px 32px 0px;
+}
+.title-course__curator,
+.title-steps__subtitle {
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: #1e212c;
+  text-transform: uppercase;
+  margin: 0px 0px 8px 0px;
+}
+.title-course__name,
+.title-steps__title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 1.3;
+  color: #1e212c;
+  margin: 0px 0px 16px 0px;
+}
+.title-course__profession {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #787a80;
+  margin: 0px 0px 5px 0px;
+}
+
+.info {
+  margin: 0px 0px 32px 0px;
+  font-weight: 700;
+  color: #424551;
+}
+.info__rate {
+  padding-left: 24px;
+  background: url("../img/Star.png") 0 5px no-repeat;
+  min-height: 21px;
+}
+.info__courses {
+  padding-left: 24px;
+  background: url("../img/Play.png") 0 5px no-repeat;
+  min-height: 21px;
+}
+.info__students {
+  padding-left: 24px;
+  background: url("../img/Person.png") 0 5px no-repeat;
+  min-height: 21px;
+}
+.info__item {
+  margin: 0px 0px 4px 0px;
+}
+
+.story {
+  max-width: 600px;
+  margin: 0px 0px 10px 0px;
+}
+/* ==================== Второй блок === (Подробнее) === Конец === 2022-10 ==================== */
+
+/* ==================== Тесты === (Тестики) === Начало === 2022-10 ==================== */
+.steps__container {
+  padding: 10px;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+.title-steps {
+  text-align: center;
+  margin: 0px 0px 60px 0px;
+}
+.steps__column {
+  display: inline-block;
+  max-width: 285px;
+}
+.steps__row {
+  padding-left: 30px;
+}
+.steps__body-link {
+  min-height: 100px;
+}
+.steps__column:not(:last-child) .steps__body-link::after {
+  content: "";
+  height: 20px;
+  width: 59%;
+  display: inline-block;
+  border-top: 4px dotted #d7dadd;
+  vertical-align: middle;
+}
+.steps__link {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 1.3;
+  color: #d7dadd;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.steps__column:hover .steps__link {
+  color: rgba(255, 63, 58, 1);
+  background: url("../img/bg-circles.png") 0 0 no-repeat;
+}
+.steps__subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+.steps__subtitle::first-letter {
+  color: blueviolet;
+  font-weight: 900;
+}
+.steps__text {
+  color: #787a80;
+}
+.steps__text::first-line {
+  color: slateblue;
+}
+/* ==================== Тесты === (Тестики) === Конец === 2022-10 ==================== */
